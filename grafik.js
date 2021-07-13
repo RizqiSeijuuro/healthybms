@@ -1,5 +1,5 @@
-var ctx = document.getElementById("myChart").getContext('2d');
-		var myChart = new Chart(ctx, {
+var temp = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(temp, {
 			type: 'line',
 			data: {
 				labels: ['8 Juni 2021', '15 Juni 2021', '22 Juni 2021', '29 Juni 2021', '6 Juli 2021', '13 Juli 2021'],
