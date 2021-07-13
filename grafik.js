@@ -1,11 +1,18 @@
 var ctx = document.getElementById("myChart").getContext('2d');
 		var myChart = new Chart(ctx, {
-			type: 'bar',
+			type: 'line',
 			data: {
-				labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+				labels: ['8 Juni 2021', '15 Juni 2021', '22 Juni 2021', '29 Juni 2021', '6 Juli 2021', '13 Juli 2021'],
 				datasets: [{
-					label: '# of Votes',
-					data: [12, 19, 3, 23, 2, 3],
+					label: 'Temperature',
+					data: [
+						23.5,
+						28,
+						22,
+						22,
+						23,
+						21
+					],
 					backgroundColor: [
 					'rgba(255, 99, 132, 0.2)',
 					'rgba(54, 162, 235, 0.2)',
@@ -26,6 +33,14 @@ var ctx = document.getElementById("myChart").getContext('2d');
 				}]
 			},
 			options: {
+				title:{
+					display:true,
+					text:'RECENT HISTORY',
+					fontSize:25
+				},
+				tooltips:{
+					enabled:true
+				},
 				scales: {
 					yAxes: [{
 						ticks: {
