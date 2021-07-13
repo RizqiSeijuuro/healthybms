@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Healthy Building Monitoring System</title>
-    <script type="text/javascript" src="./chartjs/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 </head>
 <body>
     <!--navbar-->
@@ -58,7 +58,7 @@
 
     <!--Tab Vertikal-->
     <div class="row">
-      <div class="col-2">
+      <div class="col-md-2">
 
         <div class="accordion" id="accordionExample">
           <div class="card">
@@ -137,25 +137,25 @@
         
       </div>
       
-      <div class="col-8">
+      <div class="col-sm-12 col-md-7">
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-RDosen" role="tabpanel" aria-labelledby="v-pills-RDosen-tab">
+          <div class="tab-pane fade show active mx-3" id="v-pills-RDosen" role="tabpanel" aria-labelledby="v-pills-RDosen-tab">
             <h4>Ruang Dosen</h4>
             <p>Selamat datang di Ruang Dosen.</p>            
           </div>
-          <div class="tab-pane fade" id="v-pills-RTunggu" role="tabpanel" aria-labelledby="v-pills-RTunggu-tab">
+          <div class="tab-pane fade mx-3" id="v-pills-RTunggu" role="tabpanel" aria-labelledby="v-pills-RTunggu-tab">
             <h4>Ruang Tunggu</h4>
             <p>Selamat datang di Ruang Tunggu.</p>
           </div>
-          <div class="tab-pane fade" id="v-pills-RDental" role="tabpanel" aria-labelledby="v-pills-RDental-tab">
+          <div class="tab-pane fade mx-3" id="v-pills-RDental" role="tabpanel" aria-labelledby="v-pills-RDental-tab">
             <h4>Ruang Dental X-Ray</h4>
             <p>Selamat datang di Ruang Dental X-Ray.</p>
           </div>
-          <div class="tab-pane fade" id="v-pills-PGAnak" role="tabpanel" aria-labelledby="v-pills-PGAnak-tab">
+          <div class="tab-pane fade mx-3" id="v-pills-PGAnak" role="tabpanel" aria-labelledby="v-pills-PGAnak-tab">
             <h4>Poli Gigi Anak</h4>
             <p>Selamat datang di Ruang Poli Gigi Anak.</p>
           </div>
-          <div class="tab-pane fade" id="v-pills-PG1" role="tabpanel" aria-labelledby="v-pills-PG1-tab">
+          <div class="tab-pane fade mx-3" id="v-pills-PG1" role="tabpanel" aria-labelledby="v-pills-PG1-tab">
             <h4>Poli Gigi 1</h4>
             <p>Selamat datang di Ruang Poli Gigi 1.</p>
             <hr>
@@ -163,65 +163,83 @@
             <p>Lantai 1. Poli Gigi Umum, Ruang Konsultasi A</p>
             <div class="card mb-3 border-primary">
               <div class="row g-0">
-                <div class="col-md-2 border-right my-auto">
-                  <center><p><strong>IEQ Keseluruhan</strong></p></center>
+                <div class="col-sm-12 col-xl-2 border-right border-bottom my-auto py-auto">
+                  <p class="text-sm-center text-bold">IEQ Keseluruhan</p>
                   <center class="text-primary"><h4>BAIK</h4></center>
                 </div>
-                <div class="col-md-10 mx-0">
+                <div class="col-sm-12 col-xl-10 mx-0">
                   <div class="card-body">
                     <div class="row">
                       <p class="text-center col-sm-12"><strong>DATA REALTIME</strong></p>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Temperature</p>
-                          <p><strong>24</strong><span style="font-size: 12px;">C</span></p>
-                          <br>
-                          <p style="font-size: 14px;">PM 2.5</p>
-                          <p><strong>0.01</strong><span style="font-size: 12px;">mg/m3</span></p>
+                          <p>Temperature</p>
+                          <p><strong>24</strong><span class="text-muted">C</span></p>
                         </center>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Kelembaban</p>
-                          <p><strong>20</strong><span style="font-size: 12px;">%</span></p>
-                          <br>
-                          <p style="font-size: 14px;">PM 10</p>
-                          <p><strong>0.05</strong><span style="font-size: 12px;">mg/m3</span></p>
+                          <p>Kelembaban</p>
+                          <p><strong>20</strong><span class="text-muted">%</span></p>
                         </center>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Kebisingan</p>
-                          <p><strong>20</strong><span style="font-size: 12px;">dB</span></p>
-                          <br>
-                          <p style="font-size: 14px;">CO2</p>
-                          <p><strong class="text-danger">1021</strong><span style="font-size: 12px;">ppm</span></p>
+                          <p>Kebisingan</p>
+                          <p><strong>20</strong><span class="text-muted">dB</span></p>
                         </center>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Illuminansi</p>
-                          <p><strong>300</strong><span style="font-size: 12px;">lux</span></p>
-                          <br>
-                          <p style="font-size: 14px;">CO</p>
-                          <p><strong>4.5</strong><span style="font-size: 12px;">ppm</span></p>
+                          <p>Illuminansi</p>
+                          <p><strong>300</strong><span class="text-muted">lux</span></p>
                         </center>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Outdoor ACH</p>
-                          <p><strong>90</strong><span style="font-size: 12px;">%</span></p>
-                          <br>
-                          <p style="font-size: 14px;">VOC</p>
-                          <p><strong>26</strong><span style="font-size: 12px;">ppb</span></p>
+                          <p>Outdoor ACH</p>
+                          <p><strong>90</strong><span class="text-muted">%</span></p>
                         </center>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
                         <center>
-                          <p style="font-size: 14px;">Formaldehida</p>
-                          <p><strong>0.05</strong><span style="font-size: 12px;">C</span></p>
-                          <br>
-                          <p style="font-size: 14px;">Tekanan udara</p>
+                          <p>Formaldehida</p>
+                          <p><strong>0.05</strong><span class="text-muted">C</span></p>
+                      </div>
+                      
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>
+                          <p>PM 2.5</p>
+                          <p><strong>0.01</strong><span class="text-muted">mg/m3</span></p>
+                        </center>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>
+                          <p>PM 10</p>
+                          <p><strong>0.05</strong><span class="text-muted">mg/m3</span></p>
+                        </center>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>
+                          <p>CO2</p>
+                          <p><strong class="text-danger">1021</strong><span class="text-muted">ppm</span></p>
+                        </center>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>
+                          <p>CO</p>
+                          <p><strong>4.5</strong><span class="text-muted">ppm</span></p>
+                        </center>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>                          
+                          <p>VOC</p>
+                          <p><strong>26</strong><span class="text-muted">ppb</span></p>
+                        </center>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <center>
+                          <p>Tekanan udara</p>
                           <h6><strong>positive</strong></h6>
                         </center>
                       </div>
@@ -230,10 +248,8 @@
                 </div>                
               </div>
             </div>
-            <div class="card mb-3 border-primary">
-              <div>
-                <canvas id="myChart" width="400" height="400"></canvas>
-              </div>  
+            <div>
+              <canvas id="myChart"></canvas>
             </div>
           </div>
           <div class="tab-pane fade" id="v-pills-PG2" role="tabpanel" aria-labelledby="v-pills-PG2-tab">
@@ -250,43 +266,43 @@
           </div>
         </div>
       </div>
-      <div class="col-2">
-        <div class="row border border-primary rounded-lg mr-3 mt-3">
+      <div class="col-sm-12 col-md-3">
+        <div class="row border border-primary rounded-lg mx-3 mt-3">
           <p class="text-center col-sm-12"><strong>PERINGATAN</strong></p>
-          <div class="col-sm-4">
-            <p style="font-size: 11px;">12/07/2021</p>
+          <div class="col-xl-4 col-sm-12">
+            <p class="text-muted">12/07/2021</p>
           </div>
-          <div class="col-sm-8">
-            <p style="font-size: 11px;">Kadar CO2 melebihi ambang batas 1000 ppm</p>
+          <div class="col-xl-8 col-sm-12">
+            <p>Kadar CO2 melebihi ambang batas 1000 ppm</p>
           </div>
-          <div class="col-sm-4">
-            <p style="font-size: 11px;">10/07/2021</p>
+          <div class="col-xl-4 col-sm-12">
+            <p class="text-muted">10/07/2021</p>
           </div>
-          <div class="col-sm-8">
-            <p style="font-size: 11px;">Temperatur terlalu rendah, di bawah 20 C</p>
+          <div class="col-xl-8 col-sm-12">
+            <p>Temperatur terlalu rendah, di bawah 20 C</p>
           </div>
-          <div class="col-sm-4">
-            <p style="font-size: 11px;">09/07/2021</p>
+          <div class="col-xl-4 col-sm-12">
+            <p class="text-muted">09/07/2021</p>
           </div>
-          <div class="col-sm-8">
-            <p style="font-size: 11px;">Tingkat kelembaban terlalu tinggi, di atas batas 25 %</p>
+          <div class="col-xl-8 col-sm-12">
+            <p>Tingkat kelembaban terlalu tinggi, di atas batas 25 %</p>
           </div>
-          <div class="col-sm-4">
-            <p style="font-size: 11px;">07/07/2021</p>
+          <div class="col-xl-4 col-sm-12">
+            <p class="text-muted">07/07/2021</p>
           </div>
-          <div class="col-sm-8">
-            <p style="font-size: 11px;">Kebisingan melebihi batas ambang 20dB</p>
+          <div class="col-xl-8 col-sm-12">
+            <p>Kebisingan melebihi batas ambang 20dB</p>
           </div>
-          <div class="col-sm-4">
-            <p style="font-size: 11px;">3/07/2021</p>
+          <div class="col-xl-4 col-sm-12">
+            <p class="text-muted">3/07/2021</p>
           </div>
-          <div class="col-sm-8">
-            <p style="font-size: 11px;">Sensor pencahayaan tidak mengirimkan data</p>
+          <div class="col-xl-8 col-sm-12">
+            <p>Sensor pencahayaan tidak mengirimkan data</p>
           </div>
         </div>
         <br>
-        <div class="row border border-primary rounded-lg mr-3">
-          <p class="text-center"><strong>KONDISI SENSOR REALTIME</strong></p>
+        <div class="row border border-primary rounded-lg mx-3 my-3">
+          <p class="text-center col-sm-12"><strong>KONDISI SENSOR REALTIME</strong></p>
           <div class="col-sm-12">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="custom-control-input" id="customSwitch1">
@@ -338,45 +354,77 @@
     </div>
     <!--Tab Vertikal-->
 
+    <!--
     <script>
-      var ctx = document.getElementById('myChart');
-      var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+      let myChart = document.getElementById('myChart').getContext('2d');
+  
+      // Global Options
+      Chart.defaults.global.defaultFontFamily = 'Lato';
+      Chart.defaults.global.defaultFontSize = 18;
+      Chart.defaults.global.defaultFontColor = '#777';
+  
+      let massPopChart = new Chart(myChart, {
+        type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data:{
+          labels:['8 Juni 2021', '15 Juni 2021', '22 Juni 2021', '29 Juni 2021', '6 Juli 2021', '13 Juli 2021'],
+          datasets:[{
+            label:'Temperature',
+            data:[
+              23.5,
+              28,
+              22,
+              22,
+              23,
+              21
             ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+            //backgroundColor:'green',
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
             ],
-            borderWidth: 1
+            borderWidth:1,
+            borderColor:'#777',
+            hoverBorderWidth:3,
+            hoverBorderColor:'#000'
           }]
         },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
+        options:{
+          title:{
+            display:true,
+            text:'RECENT HISTORY',
+            fontSize:25
+          },
+          legend:{
+            display:true,
+            position:'right',
+            labels:{
+              fontColor:'#000'
             }
+          },
+          layout:{
+            padding:{
+              left:50,
+              right:0,
+              bottom:0,
+              top:0
+            }
+          },
+          tooltips:{
+            enabled:true
           }
         }
       });
     </script>
+-->
+    
 
+    <script src="grafik.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
